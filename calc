@@ -1,0 +1,68 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package calculator;
+import java.util.*;
+
+/**
+ *
+ * @author Tomek
+ */
+public class Calculator {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        double a;
+        double b;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Two number calculator");
+        
+        System.out.println("Type number a");
+        a = scan.nextDouble();
+        System.out.println("Type number b");
+        b = scan.nextDouble();
+        
+        System.out.println("What You Gonna Do???");
+        System.out.println(" add(+)? subtract(-)? multiply(*)? divide(/)? ");
+        
+        Scanner scanString = new Scanner(System.in);
+        String sign1 = scanString.nextLine();
+          
+        switch(sign1){
+            case "+" :
+                System.out.println("sum a+b = "+(a+b));
+                break;
+            case "add" :
+                System.out.println("sum a+b = "+(a+b));
+                break;
+                
+            case "-" :
+                System.out.println("result a-b = "+(a-b));
+                break;
+            case "subtract" :
+                System.out.println("result a-b = "+(a-b));
+                break;
+                
+            case "*" :
+                System.out.println("product a*b = "+(a*b));
+                break;
+            case "multiply" :
+                System.out.println("product a*b = "+(a*b));
+                break;
+                
+            case "/" :
+                System.out.println("quotient a/b = "+(a/b));
+                break;
+            case "divide" :
+                System.out.println("quotient a/b = "+(a/b));
+                break;   
+                
+            default: System.out.println("sth wrong :o do it again");
+            
+        }   
+    }   
+}
